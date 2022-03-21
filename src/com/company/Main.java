@@ -11,12 +11,15 @@ public class Main {
         exampleOne.add("Three");
         exampleOne.add("One");
         Iterator<String> iteratorOne = exampleOne.iterator();
+        System.out.println(iteratorOne.hasNext());
+        System.out.println(exampleOne.contains("Two") + " TEST");
         while (iteratorOne.hasNext()) {
             String value = iteratorOne.next();
             if (value == "Two") {
                 iteratorOne.remove();
             }
         }
+        System.out.println(exampleOne.contains("Two") + " TEST");
         for (String s : exampleOne) {
             System.out.println(s);
         }
