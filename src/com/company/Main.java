@@ -42,5 +42,12 @@ public class Main {
             String value = iteratorThee.next();
             System.out.println(value);
         }
+        System.out.println();
+        Iterator<Map.Entry<String, Integer>> iteratorFour = exampleThree.entrySet().iterator();
+        while (iteratorFour.hasNext()) {
+            Map.Entry<String, Integer> entry = iteratorFour.next();
+            System.out.println("Key: " + entry.getKey());
+            System.out.println("Value: " + entry.getValue());
+        }
     }
 }
